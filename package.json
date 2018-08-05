@@ -1,15 +1,16 @@
 {
-  "version": "0.0.0-development",
-  "name": "har-schema",
+  "version": "0.1.0",
+  "name": "@krisselden/har-schema",
   "description": "JSON Schema for HTTP Archive (HAR)",
   "author": "Ahmad Nassri <ahmad@ahmadnassri.com> (https://www.ahmadnassri.com/)",
   "contributors": [
-    "Evgeny Poberezkin <e.poberezkin@me.com>"
+    "Evgeny Poberezkin <e.poberezkin@me.com>",
+    "Kris Selden <kris.selden@gmail.com>"
   ],
-  "homepage": "https://github.com/ahmadnassri/har-schema",
+  "homepage": "https://github.com/krisselden/har-schema",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ahmadnassri/har-schema.git"
+    "url": "https://github.com/krisselden/har-schema.git"
   },
   "license": "ISC",
   "main": "lib/index.js",
@@ -28,7 +29,7 @@
     "lib"
   ],
   "bugs": {
-    "url": "https://github.com/ahmadnassri/har-schema/issues"
+    "url": "https://github.com/krisselden/har-schema/issues"
   },
   "scripts": {
     "test": "tap test --reporter spec",
