@@ -1,42 +1,39 @@
 {
-  "version": "0.1.0",
   "name": "@krisselden/har-schema",
+  "version": "0.1.0",
   "description": "JSON Schema for HTTP Archive (HAR)",
-  "author": "Ahmad Nassri <ahmad@ahmadnassri.com> (https://www.ahmadnassri.com/)",
-  "contributors": [
-    "Evgeny Poberezkin <e.poberezkin@me.com>",
-    "Kris Selden <kris.selden@gmail.com>"
+  "keywords": [
+    "JSON",
+    "JSON-schema",
+    "archive",
+    "har",
+    "http",
+    "schema"
   ],
   "homepage": "https://github.com/krisselden/har-schema",
+  "bugs": {
+    "url": "https://github.com/krisselden/har-schema/issues"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/krisselden/har-schema.git"
   },
   "license": "ISC",
-  "main": "lib/index.js",
-  "keywords": [
-    "har",
-    "http",
-    "archive",
-    "JSON",
-    "schema",
-    "JSON-schema"
+  "author": "Ahmad Nassri <ahmad@ahmadnassri.com> (https://www.ahmadnassri.com/)",
+  "contributors": [
+    "Evgeny Poberezkin <e.poberezkin@me.com>",
+    "Kris Selden <kris.selden@gmail.com>"
   ],
-  "engines": {
-    "node": ">=4"
-  },
   "files": [
     "lib"
   ],
-  "bugs": {
-    "url": "https://github.com/krisselden/har-schema/issues"
-  },
+  "main": "lib/index.js",
   "scripts": {
-    "test": "tap test --reporter spec",
-    "pretest": "snazzy && echint",
-    "coverage": "tap test --reporter silent --coverage",
     "codeclimate": "tap --coverage-report=text-lcov | codeclimate-test-reporter",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+    "coverage": "tap test --reporter silent --coverage",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
+    "pretest": "snazzy && echint",
+    "test": "tap test --reporter spec"
   },
   "config": {
     "commitizen": {
@@ -51,5 +48,11 @@
     "semantic-release": "^6.3.2",
     "snazzy": "^5.0.0",
     "tap": "^8.0.1"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
