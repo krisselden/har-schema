@@ -20,7 +20,7 @@
       "type": "string"
     },
     "encoding": {
-      "type": "string"
+      "type": "BufferEncoding"
     },
     "comment": {
       "type": "string"
